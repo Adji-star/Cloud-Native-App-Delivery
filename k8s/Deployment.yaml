@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: techlogix-inventory
+  labels:
+    app: techlogix-inventory
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: techlogix-inventory
+  template:
+    metadata:
+      labels:
+        app: techlogix-inventory
+    spec:
+      containers:
+      - name: techlogix-inventory
+        image: adjimsd/techlogix-inventory:v1.0
+        ports:
+        - containerPort: 3000
