@@ -1,4 +1,5 @@
 # Cloud-Native App Delivery — TechLogix Inventory
+# Réalisé par: Adji Mareme Soda DIALLO et Muhammadou Lamin BAH
 
 ## Description
 Application de gestion de stock conteneurisée et déployée sur Kubernetes via un pipeline CI/CD automatisé.
